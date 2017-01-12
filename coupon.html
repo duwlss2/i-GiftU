@@ -29,7 +29,6 @@
             background-color: white;
             margin-bottom: 46px;
 /*            box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
-            width: 100%;
         }
         
         label{
@@ -83,23 +82,23 @@
                 <img src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[106509]_20150724164325806.jpg" class="img-responsive center-block" alt="음료수<체리콕>">
                 
                 
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel">
-                    <div class="panel-heading" role="tab" id="headingOne">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">           
+                   <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingTwo">
                       <h4 class="panel-title text-center">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          편지 보기
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#letter" aria-expanded="false" aria-controls="letter">
+                          편지 보기/숨기기
                         </a>
                       </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div id="letter" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                       <div class="panel-body">
                         편지내용이 들어감
                       </div>
                     </div>
                   </div>
-
                 </div>
+                
             </div>   
         </div>
         </div>
@@ -112,7 +111,7 @@
             주문번호</small></div>
         </div>
         
-        <div id="footBox" class="thumbnail navbar-fixed-bottom">
+        <div id="footBox" class="thumbnail navbar-fixed-bottom container">
             <button id="footButton" type="button" class="btn btn-default btn-lg btn-block">마이페이지로 보내기</button>
         </div>
         
