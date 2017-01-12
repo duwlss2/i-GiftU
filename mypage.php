@@ -125,12 +125,14 @@ $result3 = mysqli_query($conn,$sql);
     <div role="tabpanel">
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active col-xs-6 text-center"><a href="#Send" aria-controls="Send" role="tab" data-toggle="tab">
-      Send <?php echo $result1->num_rows; ?></a></li>
-    <li role="presentation" class="col-xs-6 text-center"><a href="#receive" aria-controls="receive" role="tab" data-toggle="tab">
-      Receive <?php echo $result3->num_rows; ?></a></li>
-  </ul>
+    <div class="container">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active col-xs-6 text-center"><a href="#Send" aria-controls="Send" role="tab" data-toggle="tab">
+          Send <?php echo $result1->num_rows; ?></a></li>
+        <li role="presentation" class="col-xs-6 text-center"><a href="#receive" aria-controls="receive" role="tab" data-toggle="tab">
+          Receive <?php echo $result3->num_rows; ?></a></li>
+      </ul>
+    </div>
 
   <!-- Tab panes -->
   <div class="tab-content">
