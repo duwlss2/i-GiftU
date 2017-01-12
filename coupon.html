@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iGiftU</title>
+    <!-- Bootstrap core CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme CSS -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    
+    <style>
+        
+        body{
+            background-color:#ececec;
+        }
+                
+        #messageBox{
+            margin-top: 60px;
+            margin-bottom: 20px;
+            padding:20px;
+            background-color: lightpink;
+            border-radius: 4%;
+            box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+            height: 100%;
+        }
+        
+        #box{
+            padding: 10px;
+            background-color: white;
+/*            box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
+            width: 100%;
+        }
+        
+        label{
+            width: 100%;
+        }
+        
+        #product{
+            font-size: 25px
+        }
+
+      </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true">iGiftU</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav text-right">
+            <li><a href="menu.html">메뉴</a></li>
+            <li class="disabled"><a href="#about">기도편지</a></li>
+            <li><a href="mypage.html">마이페이지</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+       <div id="messageBox" class="container">          
+            <div class="col-sm-12 col-md-12">
+                <div class="thumbnail">
+                    <img src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[106509]_20150724164325806.jpg" class="img-responsive center-block" alt="음료수<체리콕>">
+                </div>
+            </div>
+          <div class="form-group">
+           <label for="To">To. 강준민</label>
+            <label for="message-text" class="control-label">
+                형 사랑해요 치킨 사드릴게요♥
+            </label>
+            <label for="from" class="text-right">from. 김경협</label>
+          </div>
+        </div>
+
+        <div id="box" class="container">
+           <small>Mom's</small> <br>
+            <div id="product"><strong>아메리카노</strong></div>
+            
+            <div class="text-right"><small>유효기간<br>
+            주문번호</small></div>
+        </div>
+
+        <br>
+       
+        <div id="box" class="container">
+            <button type="button" id="usecoupon" data-loading-text="Loading" class="btn btn-primary btn-lg center-block" data-toggle="button" aria-pressed="false" autocomplete="off"> <span class="glyphicon glyphicon-ok" aria-hidden="true">쿠폰사용</span> </button>
+        </div>
+   
+
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+  </body>
+</html>
