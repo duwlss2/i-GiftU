@@ -76,24 +76,38 @@
         }
         
         #cautionBox{
+            padding: 10px;
             background-color: white;
-            margin-bottom: 26px;
+            margin-bottom: 20px;
         }
     
         #used {
-            background-color: gray;
+            padding: 10px;
+            background-color:darkgray;
+            margin-bottom: 20px;
         }
         
         #usingCoupon{
             width: 160px;
         }
+        
+        #logo{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        
+        #KakaoThumbnail{
+            font-size: 15px;
+            font-style: oblique;  
+        }
+        
       </style>
   </head>
 
   <body>
     <div id="messageBox" class="container">
          <div class="text-center">
-              IGIftU로고
+              <div id="logo" class="brand"><span class="glyphicon glyphicon-gift" aria-hidden="true">iGiftU</span></div>
           </div>
 
 <?php
@@ -125,11 +139,11 @@
   $row= mysqli_fetch_assoc($result);
   $is_used = $row['is_used'];
   ?>
-
+       
         <div>
             <div class="thumbnail">
-              <div class="effect" id="KakaoThumbnail"><img src="<?php echo $thumbnail; ?>" id="profileImg" alt="카카오톡 프로필사진">
-                <?php echo $name; ?>
+              <div class="effect" id="KakaoThumbnail"><img src="http://mud-kage.kakao.co.kr/14/dn/btqfkKobo3I/pT0RXTm1CQf7U1W9jhqoa1/o.jpg" id="profileImg" alt="카카오톡 프로필사진">
+                From. <?php echo $name; ?>
               </div>
                 <img src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[106509]_20150724164325806.jpg" class="img-responsive center-block" alt="음료수<체리콕>">
 
@@ -138,13 +152,13 @@
                     <div class="panel-heading" role="tab" id="headingTwo">
                       <h4 class="panel-title text-right">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#letter" aria-expanded="false" aria-controls="letter">
-                          편지 보기
+                          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                         </a>
                       </h4>
                     </div>
                     <div id="letter" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                       <div class="panel-body">
-                        <?php echo $message; ?>
+                        <?php echo $message; ?> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est maiores sit earum vero laborum, architecto numquam accusantium totam dolorem eum molestiae, tempore expedita ipsa nisi dolore suscipit aliquid doloremque aspernatur.
                       </div>
                     </div>
                   </div>
@@ -166,25 +180,32 @@
         <div id="cautionBox" class="container text-center">
             <div class="text-center">
                 주의사항<br>
-                1.ㅇㅁㄻㅇㄴㄹ;<br>
-                2.ㅁ이ㅏ럼ㄴ<br>
-                3.ㅇ미ㅏ러;ㅇㄴ<br>
+                Lorem ipsum dolor.<br>
+                Lorem ipsum dolor sit amet, consectetur.<br>
+                Lorem ipsum dolor sit.<br>
+                <hr>
             </div>
-            <button id="usingCoupon" type="button" onclick="document.getElementById('cautionBox').id='used'" class="btn btn-primary btn-lg">쿠폰사용</button>
+            <div id="cautionbox">
+               <button type="button" class="btn btn-danger btn-lg" data-loading-text="사용완료" onclick="document.getElementById('cautionBox').id='used'">쿠폰사용
+               </button>
+            </div>
+            <hr>
             
-            <?php
-            //체크박스
-            $checked = ($is_used) ? 'checked = "checked"' : '';
-            echo '<form id = "check"><label for="yesno">누르면 사용확인</label>';
-            echo '<input type="checkbox" name="yesno" class="onoffswitch" id="yesno" value="1"'.$checked.'> </form>'; ?>
         </div>
         
 
         <div id="footBox" class="thumbnail navbar-fixed-bottom container">
-            <a href="./kakaologin.php"><button id="footButton" type="button" class="btn btn-primary btn-lg btn-block">마이페이지에 저장하기</button></a>
+            <a href="./kakaologin.php"><button id="footButton" type="button" class="btn btn-default btn-lg btn-block">마이페이지에 저장하기</button></a>
         </div>
 
     <script>
+        //쿠폰사용 버튼 비활성화 처리
+          $(function() {
+             $("#cautionbox .btn").click(function(){
+                $(this).button('loading').delay(1000).queue(function() {
+                });
+             });
+          });
     var coupon_no = "<?php echo $coupon_no; ?>";
     $('#yesno').click(function(){
       $.ajax({
