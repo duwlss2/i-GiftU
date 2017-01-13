@@ -38,9 +38,10 @@ $result3 = mysqli_query($conn,$sql);
         .effect img {
           display: inline-block;
           box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+            margin-left: 15px;
           border-radius: 50%;
-          width: 90px;
-          height: 90px;
+          width: 60px;
+          height: 60px;
         }
 
         .form-group {
@@ -48,10 +49,9 @@ $result3 = mysqli_query($conn,$sql);
         }
 
         #idBox{
-            padding: 30px 0 0 0;
+            padding: 15px 0 0 0;
             margin-bottom: 5px;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
+            height: 110px;
         }
 
         .small{
@@ -76,6 +76,17 @@ $result3 = mysqli_query($conn,$sql);
         .tab-content{
       margin-top : 10px;
       }
+        
+        #profileName{
+            font-size: 12px;
+            padding-right: 0px;
+            width: 200px;
+        }
+        
+        #profileBox{
+            padding:0;
+        }
+        
       </style>
 
 
@@ -106,16 +117,24 @@ $result3 = mysqli_query($conn,$sql);
     </nav>
 
     <div id="idBox">
-      <div class="container form-group">
+      <div id="profileBox" class="container form-group">
         <div class="col-xs-4 col-sm-3 text-right">
         <div class="effect" id="KakaoThumbnail"><img src="<?php echo $_SESSION['thumb']; ?>"></div>
         </div>
-          <div class="col-xs-8 col-sm-8 text-center">
-             <br>
-              <?php echo "<h4><b>".$row0['name']."</b></h4>";
-                    echo "Phone ".$row0['phone']."<br>";
-                    echo "Account ".$row0['bank'].$row0['account_no'];
-                    ?>
+          <div id="profileName" class="col-xs-7 col-sm-7 text-left">
+              <table id="profileTable">
+                  <tr>
+                      <td><b>김경협</b></td>
+                  </tr>
+                  <tr>
+                      <td>Phone</td>
+                      <td>&nbsp;&nbsp;01043398728</td>
+                  </tr>
+                  <tr>
+                      <td>Account</td>
+                      <td>&nbsp;&nbsp;기업 01043398728</td>
+                  </tr>
+              </table>
               <br><p class="text-right small"><br><a href="./member_edit_1.php"><span class="glyphicon glyphicon-cog" aria-hidden="true">
                 개인정보수정</span></a></p>
           </div>
