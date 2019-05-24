@@ -1,0 +1,48 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#sidenav-overlay {
+     background-color: rgba(0,0,0,0) !important;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url(../fonts/NanumGothic.woff) format('truetype');
+}
+@font-face {
+    font-family: "Sophia";
+    src: url(../fonts/Sophia.ttf) format("truetype");
+}
+.customfont {
+    font-family: "Sophia", Verdana, Tahoma;
+    font-weight: normal;
+}
+
+html {
+  font-family: NanumGothic;
+}
+ .topbar>b {position:static}
+          @media only screen and (max-width : 992px){.topbar>b{position: absolute;}}
+
+         .topbar{padding-left: 300px !important}
+         @media only screen and (max-width: 992px){.topbar{padding-left:0 !important}}
+.blockImg>p>img{
+    height:100px !important;
+    width:100% !important;
+}
+
+.blockImg>p{
+    margin:0 !important;
+}
