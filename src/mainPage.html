@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+
+
+    <title>IGiftU 마이페이지</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+  </head>
+<body>
+
+   
+     <header>
+      <div>
+           <nav style="background-color:#553236">
+             <div class="center-align" style="margin:0; padding:0; width:100%"><span style="font-size:29px">HANDONG</span>
+             </div>
+           </nav>
+       </div>
+     </header>
+     
+     <main class="center-align">
+
+        <div class="row">
+            <div class="col s12 m9 l6" style="display: inline-block; float: none; padding:0; margin-top:6px; background-color:#005e39">
+                <img src="img/moms.png" alt="맘스 로고" style="width:30%; max-width:170px; display: block">
+            </div>
+            <div class="col s12 m9 l6 left-align" style="display: inline-block; float: none; margin-top:0; padding:5px 10px 7px; background-color:#d7d0ce">
+                <b style="vertical-align:bottom">아카이브<span style="font-size:21px">한동IN</span></b>
+            </div>
+
+           
+           
+            <div class="col s12 m9 l6" style="display: inline-block; float: none; padding:0;padding-right:6px">
+                
+                <!--이 div블럭을 반복문돌리면 됨-->
+                <div class="col s6 m4 l4 center-align" style="padding:6px 0 0 6px">
+                   <a href="./menuinside_moms_drink.php?id=<?php echo $row['menu']; ?>">
+                      <div class="card" style="margin:0; border-radius:0; z-index:0">
+                          <div class="waves-effect waves-block waves-light" style="z-index:1">
+                            <img class="activator" src="https://www.handong.edu/handongin/54/images/sub04_01.jpg" alt="기도 사진" style="height:120px">
+                          </div>
+                          <!--블럭의 내용-->
+                          <div style="padding:0; color:black; padding-bottom:4px; z-index:2; position:relative; margin-top:-10px; padding-top:5px; background-color:white">
+                            <p style="margin:5px; margin-bottom:0"><b>기도합니다</b></p>
+                            <p style="margin:5px; margin-top:0">기도 설명등등등</p>
+                          </div>
+                      </div>
+                   </a>
+                </div>
+                
+                <div class="col s6 m4 l4 center-align" style="padding:6px 0 0 6px">
+                   <a href="./menuinside_moms_drink.php?id=<?php echo $row['menu']; ?>">
+                      <div class="card" style="margin:0; border-radius:0; z-index:0">
+                          <div class="waves-effect waves-block waves-light" style="z-index:1">
+                            <img class="activator" src="img/rud1.PNG" alt="기도 사진" style="height:120px">
+                          </div>
+                          <!--블럭의 내용-->
+                          <div style="padding:0; color:black; padding-bottom:4px; z-index:2; position:relative; margin-top:-10px; padding-top:5px; background-color:white">
+                            <p style="margin:5px; margin-bottom:0"><b>기도합니다</b></p>
+                            <p style="margin:5px; margin-top:0">기도 설명등등등</p>
+                          </div>
+                      </div>
+                   </a>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </main>
+      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+  </body>
+</html>

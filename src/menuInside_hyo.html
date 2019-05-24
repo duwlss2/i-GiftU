@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>iGiftU</title>
+
+     <!-- CSS  -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     
+  <style>
+      
+    th,td {padding:15px;}
+    table {border-spacing : 50px;}
+      
+    
+    header, main, footer {padding-left: 300px;}
+    @media only screen and (max-width : 992px){header, main, footer{padding-left: 0;}}
+        .navbar-fixed-top,
+        .navbar-fixed-bottom {
+          position: fixed;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+        }
+        @media (min-width: 768px) {
+          .navbar-fixed-top,
+          .navbar-fixed-bottom {
+            border-radius: 0;
+          }
+        }
+        .navbar-fixed-bottom {
+          bottom: 0;
+          margin-bottom: 0;
+          border-width: 1px 0 0;
+        }
+      </style>
+  </head>
+  <body>
+
+    <header>
+     <div class="navbar-fixed" style="z-index: 9999;">
+          <nav role="navigation">
+            <div class="nav-wrapper container text-center" style="margin:0; padding:0; width:100%;"><a id="logo-container" href="#" class="brand-logo" style="">iGiftU</a>
+             
+              <ul id="slide-out" class="side-nav fixed">
+                <li><div class="userView" style="margin:0">
+                      <div class="background">
+                        <img src="http://materializecss.com/images/office.jpg">
+                      </div>
+                      <a href="#!user"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></a>
+                      <a href="#!name"><span class="white-text name">이름~~~</span></a>
+                      <a href="#!email"><span class="white-text email">개인주소~~~</span></a>
+                      </div>
+                </li>
+                <li style="color: black; ">
+                    <span class="new badge" data-badge-caption="" style="margin-right: 15px">4</span><a href="#!"><p style="margin-left: 55px">마이페이지</p></a>
+                </li>
+
+                <li><a class="waves-effect" href="#!">기프티콘</a></li>
+                <li><a class="waves-effect" href="#!">abasdf</a></li>
+                <li ><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+              
+            </div>
+          </nav>
+      </div>
+    </header>
+
+
+    <main>
+        <!-- 상품이미지 + 메뉴이름 + 상품가격-->
+        <div class="container">
+         <div class="container text-center" >
+           <div class="thumbnail" style="margin-top: 30px" >
+            <img src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/07/[106509]_20150724164325806.jpg" class="img-responsive center-block" alt="음료수<체리콕>">
+            </div>
+            <div style="font-size : 26px" class="text-center"><b>아메리카노</b></div>
+            <p style="font-size: 11px">에스프레소에 물을 넣어 연하게 마시는 커피메뉴로 커피 본연의 맛을 부드럽게 즐길 수 있는 대표 메뉴입니다.</p>
+          </div>
+        </div>
+        <br>
+        <table class="bordered" style="border-top: 1px solid #e7e7e7">
+          <tr  style="font-size : 16px">
+            <td><b>가격</b></td>
+            <td id="ItemPrice" class="text-right">3500원</td>
+          </tr>
+        </table>
+
+        <p style=" background-color : #eee; padding:17px; font-size:10px; margin-bottom: 50px">
+          <b>주의사항</b><br>
+          다음날부터 사용가능 합니다. <br>
+          안녕<br>
+          선물하면 카톡으로 받습니다.<br>
+          유통기한은 1년입니다.<br>
+          받은쿠폰을 마이페이지로 보내면 마이페이지에서 쉽게 확인할 수 있습니다.
+        </p>
+    </main>
+   
+    <footer class="navbar-fixed-bottom" style="z-index:1;">
+       <table  style="width:100%; height:50px">
+           <tr>
+               <td class="text-center" style="padding:0">
+                   <a href="purchase.html"><button type="button" class="btn btn-lg" style="width:100%; height:100%; background-color:#263238; font-size: 20px">미리주문</button></a>  
+               </td>
+
+               <td class="text-center" style="padding:0">
+                   <a href="purchase.html"><button type="button" class="btn btn-lg" style="width:100%; height:100%; background-color: #5d4037; font-size:20px">선물하기</button></a>   
+               </td>
+           </tr>
+       </table>
+    </footer>
+
+      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+
+  </body>
+</html>

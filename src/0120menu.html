@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <title>iGiftU 메뉴</title>
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+     <style>
+            header, main, footer {padding-left: 300px;}
+            @media only screen and (max-width : 992px){header, main, footer{padding-left: 0;}}
+         
+         .card.small{height:400px}
+         @media only screen and (max-width : 1700px){.card.small{height:250px}}
+         
+         footer{
+             position: fixed;
+             left: 0;
+             bottom: 0;
+             width: 100%;
+             height: 100px;
+         }
+         
+     </style>
+</head>
+<body>
+    <header>
+     <div class="navbar-fixed" style="z-index: 9999;">
+          <nav role="navigation">
+            <div class="nav-wrapper container text-center" style="margin:0; padding:0; width:100%;"><a id="logo-container" href="#" class="brand-logo" style="">iGiftU</a>
+
+              <ul id="slide-out" class="side-nav fixed">
+                <li><div class="userView" style="margin:0">
+                      <div class="background">
+                        <img src="http://materializecss.com/images/office.jpg">
+                      </div>
+                      <a href="#!user"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></a>
+                      <a href="#!name"><span class="white-text name">이름~~~</span></a>
+                      <a href="#!email"><span class="white-text email">개인주소~~~</span></a>
+                      </div>
+                </li>
+                <li style="color: black; ">
+                    <span class="new badge" data-badge-caption="" style="margin-right: 15px">4</span><a href="#!"><p style="margin-left: 55px">마이페이지</p></a>
+                </li>
+
+                <li><a class="waves-effect" href="#!">기프티콘</a></li>
+                <li><a class="waves-effect" href="#!">abasdf</a></li>
+                <li ><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            </div>
+          </nav>
+      </div>
+      </header>
+
+
+    <main>
+        <div class="row">
+         <div class="col s12">
+           <ul class="tabs" >
+            <li class="tab col s6"><a href="#coffee" style="text-decoration:none;">Coffee</a></li>
+            <li class="tab col s6"><a href="#dessert" style="text-decoration:none;">Dessert</a></li>
+           </ul>
+         </div>
+         <div id="coffee" class="col s12" style="background-color : #e7e7e7; padding:0; padding-right:7px">
+              <div class="row">
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                     <a href="0117purchase.html">
+                        <div class="card small" style="margin:0; margin-top:9px; border-radius:0">
+                            <div class="card-image waves-effect waves-block waves-light" style="max-height:70%">
+                              <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                            </div>
+                            <div class="card-content" style="padding:0; padding-top:15px; color:black">
+                              <p style="font-size:18px"><b>아이스 카푸치노</b></p>
+                              <p>3500원</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  
+                  
+             </div>
+         </div>
+         <div id="dessert" class="col s12" style="background-color : #e7e7e7; padding:0; padding-right:7px">
+           <div class="row">
+                  <div class="col s6 m3 l2 center-align" style="padding:0; padding-left:9px">
+                      <div class="card small" style="margin:0; margin-top:9px">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="http://image.istarbucks.co.kr/upload/store/skuimg/2015/08/[110601]_20150803101742023.jpg">
+                        </div>
+                        <div class="card-content" style="padding:0; padding-top:25px">
+                          <p style="font-size:18px"><b>아이스 케푸치노</b></p>
+                          <p>3500원</p>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  
+             </div>
+         </div>
+      </div>
+      <footer class="footer" style="background-color : #e7e7e7;">
+      <div class="container">
+      <p class="text-muted">© Developed by CRA</p>
+      </div>
+      </footer>
+    </main>
+
+      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

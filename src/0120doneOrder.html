@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+
+
+    <title>IGiftU 결제</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+    <style>
+        
+        header, main, footer {padding-left: 300px;}
+        @media only screen and (max-width : 992px){header, main, footer{padding-left: 0;}}
+        .navbar-fixed-top,
+        .navbar-fixed-bottom {
+          position: fixed;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+        }
+        @media (min-width: 768px) {
+          .navbar-fixed-top,
+          .navbar-fixed-bottom {
+            border-radius: 0;
+          }
+        }
+        .navbar-fixed-bottom {
+          bottom: 0;
+          margin-bottom: 0;
+          border-width: 1px 0 0;
+        }
+    </style>
+
+
+
+  </head>
+<body>
+  <!-- <body style="overflow: hidden"> -->
+
+    <header>
+     <div class="navbar-fixed" style="z-index: 9999;">
+          <nav role="navigation">
+            <div class="nav-wrapper container center-align" style="margin:0; padding:0; width:100%;"><a id="logo-container" href="#" class="brand-logo" style="">iGiftU</a>
+             
+              <ul id="slide-out" class="side-nav fixed">
+                <li><div class="userView" style="margin:0">
+                      <div class="background">
+                        <img src="http://materializecss.com/images/office.jpg">
+                      </div>
+                      <a href="#!user"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></a>
+                      <a href="#!name"><span class="white-text name">이름~~~</span></a>
+                      <a href="#!email"><span class="white-text email">개인주소~~~</span></a>
+                      </div>
+                </li>
+                <li style="color: black; ">
+                    <span class="new badge" data-badge-caption="" style="margin-right: 15px">4</span><a href="#!"><p style="margin-left: 55px">마이페이지</p></a>
+                </li>
+
+                <li><a class="waves-effect" href="#!">기프티콘</a></li>
+                <li><a class="waves-effect" href="#!">abasdf</a></li>
+                <li ><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+              
+            </div>
+          </nav>
+      </div>
+    </header>
+    
+    
+    
+    <main class="center-align">
+      <div class="row" style="margin-bottom:0; margin-top:15px">
+        <div class="col s12 m12 l6" style="display: inline-block; float: none">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fpixabay.com%2Fstatic%2Fuploads%2Fphoto%2F2013%2F02%2F18%2F18%2F36%2Fchristmas-present-83119_960_720.jpg&type=b400">
+            </div>
+            <div class="card-content">
+              <span style="font-size:18px"><b>주문이 완료되었습니다.</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+    <div class="row navbar-fixed-bottom" >
+      <div class="col s12 m12 l6 center-align" style="display: inline-block; float: none">        
+        <button class="btn waves-effect waves-light hoverable col s12 m12 l12" type="submit" name="action" style="background-color:#005e39; height:50px; font-size:17px; margin-bottom:5px">메뉴로 돌아가기
+        </button>
+      </div>
+    </div>
+    </main>
+
+     
+      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+  </body>
+</html>

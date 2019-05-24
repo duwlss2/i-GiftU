@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>iGiftU</title>
+
+     <!-- CSS  -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+         <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <script src="//cdn.transifex.com/live.js"></script>
+  <style>
+      
+    th,td {padding:15px;}
+    table {border-spacing : 50px;}
+      
+    
+    header, main, footer {padding-left: 300px;}
+    @media only screen and (max-width : 992px){header, main, footer{padding-left: 0;}}
+        .navbar-fixed-top,
+        .navbar-fixed-bottom {
+          position: fixed;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+        }
+        @media (min-width: 768px) {
+          .navbar-fixed-top,
+          .navbar-fixed-bottom {
+            border-radius: 0;
+          }
+        }
+        .navbar-fixed-bottom {
+          bottom: 0;
+          margin-bottom: 0;
+          border-width: 1px 0 0;
+        }
+      </style>
+  </head>
+  <body>
+<div class="row">
+    <div class="col s12 m9 l10">
+      
+        <!-- Modal Trigger -->
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+        <script>  var options = [
+    {selector: '.class', offset: 0, callback: customCallbackFunc } },
+    {selector: '.other-class', offset: 0, callback: function() {
+      customCallbackFunc();
+    } },
+  ];
+  Materialize.scrollFire(options);</script>
+        <script>
+        var options = [
+    {selector: '#staggered-test', offset: 0, callback: function(el) {
+      Materialize.toast("This is our ScrollFire Demo!", 1500 );
+    } }
+  ];
+  Materialize.scrollFire(options);</script>
+
+
+  </body>
+</html>

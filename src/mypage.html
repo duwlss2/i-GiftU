@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+
+
+    <title>IGiftU 마이페이지</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <style>
+
+        header, main, footer {padding-left: 300px;}
+        @media only screen and (max-width : 992px){header, main, footer{padding-left: 0;}}
+        td{padding:0}
+        .tabs .tab a:hover, .tabs .tab a.active{color:#6a5a49 !important}
+        .tab a{color:rgba(106,90,73, 0.7) !important}
+        .indicator{background-color:#6a5a49 !important}
+        .card a:not(.btn):not(.btn-large):not(.btn-floating):hover .card-action {color: #ffd8a6}
+        .card a:not(.btn):not(.btn-large):not(.btn-floating) .card-action {color: #ffab40}
+    </style>
+  </head>
+<body>
+  <!-- <body style="overflow: hidden"> -->
+    <main class="center-align">
+
+        <div class="row">
+             <div class="col s12 l6" style="display: inline-block; float: none">
+                  <ul class="tabs">
+                      <li class="tab col s4"><a href="#Receive" style="font-size:16px">받은쿠폰</a></li>
+                      <li class="tab col s4"><a href="#Send" style="font-size:16px">보낸쿠폰</a></li>
+                      <li class="tab col s4"><a href="#Reserve" style="font-size:16px">예약주문</a></li>
+
+                  </ul>
+             </div>
+             <div id="Receive" class="col s12 l6" style="display: inline-block; float: none">
+               
+<!--               여기부터-->
+                <div class="card horizontal" style="max-width:330px; min-width:300px; display: inline-block; float: none">
+                     <div style="display:flex">
+                          <div class="card-image" style="width:30%; max-width:180px; display:block">
+                            <img src="이미지파일" class="responsive-img">
+                          </div>
+                          <div class="card-stacked" style="display:block">
+                            <div class="card-content" style="padding:15px">
+                                         <p style="font-size:17px">아메리카노</p>
+                                         <p style="font-size:11px;color:#a1a1a1">2017-01-31 21:55 곽효빈</p>
+                            </div>
+                            <a href="#" style="margin:0">
+                                <div class="card-action" style="height:30px; padding:5px; font-size:12px">
+                                  쿠폰페이지 바로가기
+                                </div>
+                            </a>
+                          </div>
+                      </div>
+                </div>
+<!--                여기까지 반복-->
+            </div>
+
+           
+            <div id="Send" class="col s12 l6" style="display: inline-block; float: none">
+<!--               여기부터-->
+                <div class="card horizontal" style="max-width:330px; min-width:300px; display: inline-block; float: none">
+                     <div style="display:flex">
+                          <div class="card-image" style="width:30%; max-width:180px; display:block">
+                            <img src="이미지파일" class="responsive-img">
+                          </div>
+                          <div class="card-stacked" style="display:block">
+                            <div class="card-content" style="padding:15px">
+                                         <p style="font-size:17px">아메리카노</p>
+                                         <p style="font-size:11px;color:#a1a1a1">2017-01-31 21:55 곽효빈</p>
+                            </div>
+                            <a href="#" style="margin:0">
+                                <div class="card-action" style="height:30px; padding:5px; font-size:12px">
+                                  쿠폰페이지 바로가기
+                                </div>
+                            </a>
+                          </div>
+                      </div>
+                </div>
+<!--                여기까지 반복-->
+            </div>
+
+           
+           
+            <div id="Reserve" class="col s12 l6" style="display: inline-block; float: none">
+               
+            </div>
+        </div>
+
+    </main>
+      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+  </body>
+</html>
